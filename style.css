@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden; 
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.navcontainer {
+  background: #05052b;
+  background: linear-gradient(92deg, rgba(5, 5, 43, 1) 0%, rgba(24, 66, 184, 1) 50%, rgba(111, 121, 171, 1) 100%);
+  width: 100vw;
+  min-height: 70px;
+  position: relative;
+}
+
+#navlist {
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navname {
+  display: flex;
+  font-size: 50px;
+  color: rgb(231, 231, 240);
+}
+
+#navcontent {
+  font-size: 40px;
+  display: flex;
+  gap: 40px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #d7d1df;
+}
+
+.contentBox {
+  width: 70%;
+  /* height: 1000px; */
+  background-color: rgb(214, 172, 214);
+  margin: auto;
+  border: solid black 1px;
+  box-shadow: 2px 2px 40px black;
+}
+
+.leftBox {
+  width: 600px;
+  margin-left: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftBox h1{
+  font-size: 3rem;
+}
+
+#north , #south, #chinese1, #chinese2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#price1 , #price2, #price3, #price4{
+    font-style: italic;
+}
+
+.rightBox{
+  position: relative;
+  transition: all 0.6s linear 0s;
+  overflow: hidden;
+}
+
+.rightBox .overlay{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: yellow;
+  height: 320px;
+  width: 320px;
+  border-radius: 400px;
+  background-color: rgba(57, 60, 58, 0.349);
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.rightBox .overlay:hover{
+  opacity: 1;
+}
+
+.rightBox .overlay span{
+  color: white;
+}
+
+.rightBox img{
+  height: 320px;
+  width: 320px;
+  border: yellow solid 2px;
+  border-radius: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  box-shadow: 5px 5px 30px black;
+}
+
+.rightBox:hover{
+  transform: scale(1.1);
+}
+
+.footerBox {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
